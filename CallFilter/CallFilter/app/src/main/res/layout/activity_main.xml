@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recoder_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yuxiapeng.callfilter.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:fontFamily="sans-serif"
+        android:text="Telephone Interception Records"
+        android:textColor="#A0522D"
+        android:textSize="20sp" />
+
+    <!--引入ListView控件-->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

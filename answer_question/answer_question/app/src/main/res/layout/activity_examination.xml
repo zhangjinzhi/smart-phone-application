@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/quizbackground"
+    tools:context="com.example.zhangjinzhi.answer_question.examination.ExaminationFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextSwitcher
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:textSize="20sp"
+            android:background="@drawable/timeback"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/showTime"
+            android:text="time" />
+
+        <TextSwitcher
+            android:id="@+id/showQuestion"
+            android:layout_width="384dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:text="equations"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputFirstAnswer"
+            android:layout_weight="1"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/inputSecondAnswer"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="68dp"
+            android:id="@+id/showCorrectAnswer"
+            android:gravity="center"
+            android:text="answers"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:text="submit"
+            android:id="@+id/submit"
+            android:layout_marginRight="20dp"
+            android:layout_width="80dp"
+            android:background="@drawable/back_blue2"
+            android:layout_height="40dp" />
+        <Button
+            android:text="next"
+            android:id="@+id/nextQuestion"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:background="@drawable/back_blue2"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

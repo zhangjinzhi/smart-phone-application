@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">answer_question</string>
+    <string name="title_activity_examination_frame">ExaminationFrame</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_question">Question</string>
+</resources>
